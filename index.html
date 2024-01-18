@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Katik | Kalkulator Matematik</h2>
+    </header>
+
+    <section>
+        <h2 class="mid">Welcome to Jasa Matematik Nasional</h2>
+
+        <div class="card">
+            <div class="calculator" id="luasCalculator">
+                <div class="container-pilihan">
+                    <h3 class="mid">Rumus Luas Persegi</h3>
+                </div>
+                <img src="images/imagepersegi.png" alt="Persegi Image"> <!-- Add image here -->
+                <b>L = S x S</b>
+        
+                <h3>Hitung Luas Persegi</h3>
+                <form>
+                    <input type="number" id="luasSisi" placeholder="Nilai sisi">
+                    <button type="button" onclick="hitungLuas()">Hitung</button>
+                    <button type="reset" id="luasReset" class="reset">Reset</button>
+                </form>
+                <div id="luasContainer" class="result-container">
+                    <h3 class="result-title">Hasil Perhitungan Luas:</h3>
+                    <div id="luasOutput" class="result-output"></div>
+                    <p class="formula">Formula: L = S x S</p>
+                </div>
+            </div>
+        
+            <div class="calculator" id="kelilingCalculator">
+                <div class="container-pilihan">
+                    <h3 class="mid">Rumus Keliling Persegi</h3>
+                </div>
+                <img src="images/imagepersegi.png" alt="Persegi Image"> 
+                <b>K = 4 x S</b>
+        
+                <h3>Hitung Keliling Persegi</h3>
+                <form>
+                    <input type="number" id="kelilingSisi" placeholder="Nilai sisi">
+                    <button type="button" onclick="hitungKeliling()">Hitung</button>
+                    <button type="reset" id="kelilingReset" class="reset">Reset</button>
+                </form>
+                <div id="kelilingContainer" class="result-container">
+                    <h3 class="result-title">Hasil Perhitungan Keliling:</h3>
+                    <div id="kelilingOutput" class="result-output"></div>
+                    <p class="formula">Formula: K = 4 x S</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
